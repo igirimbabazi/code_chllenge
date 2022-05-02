@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TechUp Skills</title>
+  <style >
+    *;
+*:before,
+*:after{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  background: linear-gradient(
+        135deg,
+        #f2f2f2,
+        #f2f2f2
+    );
+}
+.container{
+  background-color: #ffffff;
+  width: 95%;
+  min-width: 420px;
+  padding: 35px 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 10px;
+  box-shadow: 20px 30px 25px rgba(0,0,0,0,15);
+
+}
+h1{
+  font-size: 34px;
+  margin-bottom: 25px;
+
+}
+form{
+  width: 100%;
+  position: relative;
+  margin: 30px auto 0 auto;
+}
+.row{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  grid-gap: 10px 20px;
+  margin-bottom: 0.1px;
+}
+lable{
+  color: #1c093c;
+  font-size: 14px;
+}
+input{
+  width: 50%;
+  font-weight: 400;
+  padding: none;
+  border-radius: 0px;
+  border: 1.2px solid black;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px; 
+  margin-top: 5px;
+  border-color: none;
+}
+button{
+  border: none;
+  padding: 10px 20px;
+  background: linear-gradient(
+    130deg,
+    #ff471a,
+    #ff471a);
+}
+  </style>
+     
+</head>
+<body>
+  <div class="container" style="width: 55%; height: 75%">
+    <h1>Fill the form <br>It's easy.</h1>
+    <form>
+      <div class="row">
+        <div class="column">
+          <label for="name"></label>
+          <input type="text" id="name" placeholder="first name">
+           <label for="lastName"></label>
+          <input type="lastName" id="lastName" placeholder="Last Name" style="float: left;">
+        </div>
+        <div class="column">
+         <h2>Need<br> presentation?</h2>
+         <p>You like what we do, but you need to demonstrate your team as well. Easy! Directly Download, Print or share the link to a PDF with your colleagues</p>
+         <br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <label for="email"></label>
+          <input type="email" id="email" placeholder="Email">
+        </div>
+      </div>
+      <p>Briefly tell us about your project and your current goals.<br>How can we help you?</p>
+            <div class="row">
+        <div class="column">
+          <label for="textarea"></label>
+          <input type="textarea" id="#" placeholder="">
+        </div>
+      </div>
+      <br>
+      <button>Send message</button>
+    </form>
+  </div>
+     
+                    
+</body>
+</html>
